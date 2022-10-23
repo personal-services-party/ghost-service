@@ -9,7 +9,7 @@ services:
   database:
     image: mysql:8
     restart: always
-    container_name: database_container
+    container_name: ghost_database_container
     volumes:
       - ./mysql/config:/etc/mysql/conf.d/
       - ./mysql/database:/var/lib/mysql/
